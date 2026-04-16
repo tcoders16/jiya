@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import NavBar from "@/components/NavBar";
 import NotificationStatusPill from "@/components/NotificationStatusPill";
 import ReminderEnableCard from "@/components/ReminderEnableCard";
-import InstallPromptCard from "@/components/InstallPromptCard";
+import AddToHomeScreen from "@/components/AddToHomeScreen";
 import { getPermission, type PermState } from "@/lib/notifications";
 import { isStandalone } from "@/lib/pwa";
 
@@ -26,7 +26,7 @@ export default function SettingsPage() {
         rightLabel="Archive"
       />
 
-      {!installed && <InstallPromptCard />}
+      <AddToHomeScreen />
 
       <section className="px-1">
         <div className="mb-3 flex items-center gap-3">

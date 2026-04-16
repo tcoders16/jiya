@@ -7,7 +7,7 @@ import MeaningCard from "@/components/MeaningCard";
 import ForHerCard from "@/components/ForHerCard";
 import ReminderEnableCard from "@/components/ReminderEnableCard";
 import BottomActionRow from "@/components/BottomActionRow";
-import InstallPromptCard from "@/components/InstallPromptCard";
+import AddToHomeScreen from "@/components/AddToHomeScreen";
 import ShayariRotator, { type Shayari } from "@/components/ShayariRotator";
 import ShayariChatBox from "@/components/ShayariChatBox";
 import { getTodayPoem } from "@/lib/poem-store";
@@ -87,7 +87,7 @@ export default function Home() {
         <ForHerCard line={layer?.forHer} loading={loading} />
         <ShayariRotator onShayariChange={setCurrentShayari} />
         <ReminderEnableCard />
-        <InstallPromptCard />
+        <AddToHomeScreen />
         <BottomActionRow />
       </div>
       <ShayariChatBox shayari={currentShayari} />
