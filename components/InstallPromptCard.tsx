@@ -20,7 +20,7 @@ export default function InstallPromptCard() {
       setVisible(true);
     };
     window.addEventListener("beforeinstallprompt", handler);
-    if (isIOS()) setVisible(true);
+    setVisible(true);
     return () => window.removeEventListener("beforeinstallprompt", handler);
   }, []);
 
@@ -47,22 +47,39 @@ export default function InstallPromptCard() {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 10 }}
         transition={{ duration: 0.9, delay: 1.0, ease: [0.22, 1, 0.36, 1] }}
-        className="card p-5"
+        className="card p-5 border border-accent/20"
       >
-        <div className="mb-2 flex items-center gap-3">
-          <span className="label">Home Screen</span>
+        <div className="mb-3 flex items-center gap-3">
+          <span className="label">📱 Get Ehsaas</span>
           <div className="hair flex-1" />
         </div>
-        <p className="text-[13px] font-light leading-[1.75] text-inkSoft">
-          {ios
-            ? "Tap the Share icon in Safari, then Add to Home Screen."
-            : "Add Ehsaas to your Home Screen for a softer daily feel."}
-        </p>
-        <div className="mt-4 flex items-center gap-2">
+
+        {ios ? (
+          <>
+            <p className="text-[13px] font-light leading-[1.75] text-inkSoft mb-4">
+              One tap to install on your home screen.
+            </p>
+            <ol className="text-[12px] leading-[1.7] text-inkSoft space-y-1 mb-4">
+              <li>1. Tap the Share icon <span className="text-accent">↑</span></li>
+              <li>2. Scroll down → tap "Add to Home Screen"</li>
+              <li>3. Name it "Ehsaas" → tap "Add"</li>
+            </ol>
+          </>
+        ) : (
+          <p className="text-[13px] font-light leading-[1.75] text-inkSoft mb-4">
+            Add Ehsaas to your Home Screen for a softer, quieter daily experience.
+          </p>
+        )}
+
+        <div className="mt-5 flex items-center gap-2">
           {!ios && deferred ? (
             <Button variant="primary" size="sm" onClick={install}>
-              Install
+              Download
             </Button>
+          ) : !ios ? (
+            <span className="text-[11px] text-mute">
+              Open on Android to install
+            </span>
           ) : null}
           <Button variant="ghost" size="sm" onClick={dismiss}>
             Not now

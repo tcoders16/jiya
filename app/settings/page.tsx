@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import NavBar from "@/components/NavBar";
 import NotificationStatusPill from "@/components/NotificationStatusPill";
 import ReminderEnableCard from "@/components/ReminderEnableCard";
+import InstallPromptCard from "@/components/InstallPromptCard";
 import { getPermission, type PermState } from "@/lib/notifications";
 import { isStandalone } from "@/lib/pwa";
 
@@ -25,17 +26,7 @@ export default function SettingsPage() {
         rightLabel="Archive"
       />
 
-      <section className="px-1">
-        <div className="mb-2 flex items-center gap-3">
-          <span className="label">Install</span>
-          <div className="hair flex-1" />
-        </div>
-        <p className="text-[13px] font-light leading-[1.75] text-inkSoft">
-          {installed
-            ? "Ehsaas is on your Home Screen. A quiet companion."
-            : "On iPhone: open in Safari, tap the Share icon, then Add to Home Screen."}
-        </p>
-      </section>
+      {!installed && <InstallPromptCard />}
 
       <section className="px-1">
         <div className="mb-3 flex items-center gap-3">
