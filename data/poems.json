@@ -1,0 +1,47 @@
+[
+  {
+    "id": "poem-001",
+    "date": "2026-04-16",
+    "title": "Sukoon",
+    "originalPoem": "Kuch log awaaz se nahi,\napni maujoodgi se sukoon dete hain.",
+    "tags": ["presence", "calm", "softness"],
+    "contextHint": "evening",
+    "manualNotes": "A soft quiet poem about comforting presence."
+  },
+  {
+    "id": "poem-002",
+    "date": "2026-04-17",
+    "title": "Khamoshi",
+    "originalPoem": "Tumhari khamoshi bhi,\naksar baaton se zyada pyari lagti hai.",
+    "tags": ["silence", "warmth", "affection"],
+    "contextHint": "calm",
+    "manualNotes": "Affection through silence, not through dramatic words."
+  },
+  {
+    "id": "poem-003",
+    "date": "2026-04-18",
+    "title": "Yaad",
+    "originalPoem": "Kuch yaadein,\ndil mein chupke se reh jaati hain,\nbina shor kiye.",
+    "tags": ["memory", "softness", "presence"],
+    "contextHint": "evening",
+    "manualNotes": "Gentle memories that stay without noise."
+  },
+  {
+    "id": "poem-004",
+    "date": "2026-04-19",
+    "title": "Thehrav",
+    "originalPoem": "Tum mere din ke us lamhe ki tarah ho,\njahan waqt thoda ruk sa jaata hai.",
+    "tags": ["stillness", "calm", "affection"],
+    "contextHint": "morning",
+    "manualNotes": "A moment of pause, softness in the day."
+  },
+  {
+    "id": "poem-005",
+    "date": "2026-04-20",
+    "title": "Halki Baarish",
+    "originalPoem": "Kuch log baarish ki tarah hote hain,\naate hain toh mann bheeg jaata hai,\nbina kuch kahe.",
+    "tags": ["rain", "warmth", "missing"],
+    "contextHint": "rainy",
+    "manualNotes": "People who feel like gentle rain."
+  }
+]

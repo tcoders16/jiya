@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="warm" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#1F1915"/>
+      <stop offset="100%" stop-color="#0C0A08"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5EFE4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#F5EFE4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" fill="url(#warm)"/>
+  <rect x="2" y="2" width="508" height="508" fill="none" stroke="url(#rim)" stroke-width="2"/>
+  <text
+    x="256"
+    y="272"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Instrument Serif, Georgia, 'Times New Roman', serif"
+    font-size="300"
+    font-style="italic"
+    font-weight="400"
+    fill="#F5EFE4"
+    letter-spacing="-10"
+  >JP</text>
+</svg>

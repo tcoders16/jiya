@@ -1,0 +1,39 @@
+{
+  "featuredPhotos": [
+    {
+      "id": "jiya-001",
+      "src": "/images/jiya/jiya-001.jpg",
+      "alt": "A soft portrait",
+      "date": "2026-04-16",
+      "caption": "Some people make a moment feel lighter."
+    },
+    {
+      "id": "jiya-002",
+      "src": "/images/jiya/jiya-002.jpg",
+      "alt": "A quiet glance",
+      "date": "2026-04-17",
+      "caption": "The kind of softness that stays with the day."
+    },
+    {
+      "id": "jiya-003",
+      "src": "/images/jiya/jiya-003.jpg",
+      "alt": "A gentle moment",
+      "date": "2026-04-18",
+      "caption": "In the quiet spaces between words."
+    },
+    {
+      "id": "jiya-004",
+      "src": "/images/jiya/jiya-004.jpg",
+      "alt": "A warm presence",
+      "date": "2026-04-19",
+      "caption": "The kind of light that changes everything."
+    },
+    {
+      "id": "jiya-005",
+      "src": "/images/jiya/jiya-005.jpg",
+      "alt": "A tender gaze",
+      "date": "2026-04-20",
+      "caption": "Where you are, there is home."
+    }
+  ]
+}
