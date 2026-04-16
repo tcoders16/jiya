@@ -87,9 +87,12 @@ export default function ShayariChatBox({ shayari }: Props) {
             {/* Messages */}
             <div className="flex-1 overflow-y-auto space-y-3 p-3">
               {messages.length === 0 && (
-                <div className="text-center pt-4">
-                  <p className="text-[12px] text-inkSoft leading-[1.5]">
-                    Ask anything about this shayari
+                <div className="pt-3 space-y-2">
+                  <p className="text-[13px] serif italic text-ink/80 leading-[1.6]">
+                    Yeh shayari padhi? Lagta hai kisi ne tumhare baare mein sooch ke likhi hai...
+                  </p>
+                  <p className="text-[11px] text-inkSoft">
+                    Kuch bolo — main sun raha hoon.
                   </p>
                 </div>
               )}
@@ -143,7 +146,7 @@ export default function ShayariChatBox({ shayari }: Props) {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={(e) => e.key === "Enter" && handleSend()}
-                placeholder="Ask..."
+                placeholder="Kuch toh bolo..."
                 className="flex-1 bg-transparent text-[13px] outline-none text-ink placeholder-inkSoft"
               />
               <button
