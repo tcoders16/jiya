@@ -17,22 +17,24 @@ type AnalyzeInput = {
 export async function analyzePoem(
   input: AnalyzeInput,
 ): Promise<GeneratedLayer> {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = process.env.OPENAI_API_KEY;
 
   if (apiKey) {
     try {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
+      const res = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
         headers: {
           "content-type": "application/json",
-          "x-api-key": apiKey,
-          "anthropic-version": "2023-06-01",
+          "authorization": `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          model: "claude-sonnet-4-5",
+          model: "gpt-4o",
           max_tokens: 600,
-          system: SYSTEM_PROMPT,
           messages: [
+            {
+              role: "system",
+              content: SYSTEM_PROMPT,
+            },
             {
               role: "user",
               content: `${DEVELOPER_PROMPT}\n\n${buildUserPrompt(input)}`,
@@ -42,8 +44,7 @@ export async function analyzePoem(
       });
       if (res.ok) {
         const data = await res.json();
-        const text =
-          data?.content?.[0]?.text ?? data?.content?.[0]?.input?.text ?? "";
+        const text = data?.choices?.[0]?.message?.content ?? "";
         const parsed = safeJson(text);
         if (parsed) return normalize(parsed);
       }

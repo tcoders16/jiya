@@ -13,10 +13,10 @@ Open http://localhost:3000 on your phone (or iPhone 13 sim) for the intended exp
 
 ## LLM
 
-Set `ANTHROPIC_API_KEY` in `.env.local` to enable real generation. Without it, a local fallback layer is returned so the app still feels complete.
+Set `OPENAI_API_KEY` in `.env.local` to enable real generation. Without it, a local fallback layer is returned so the app still feels complete.
 
 ```
-ANTHROPIC_API_KEY=sk-ant-...
+OPENAI_API_KEY=sk-proj-...
 ```
 
 ## Adding poems
@@ -45,4 +45,4 @@ If no poem matches today's date, the app falls back to rotating through entries 
 
 ## Deploy
 
-Vercel. Add `ANTHROPIC_API_KEY` as an environment variable.
+Vercel. Add `OPENAI_API_KEY` as an environment variable in Vercel dashboard.
