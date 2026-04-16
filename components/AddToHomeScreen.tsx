@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { isStandalone, isIOS } from "@/lib/pwa";
 
 export default function AddToHomeScreen() {
@@ -9,12 +9,12 @@ export default function AddToHomeScreen() {
   const [ios, setIos] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [done, setDone] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
     setMounted(true);
     setInstalled(isStandalone());
     setIos(isIOS());
-
     const handler = (e: any) => {
       e.preventDefault();
       setDeferredPrompt(e);
@@ -23,7 +23,7 @@ export default function AddToHomeScreen() {
     return () => window.removeEventListener("beforeinstallprompt", handler);
   }, []);
 
-  if (!mounted || installed || done) return null;
+  if (!mounted || installed || done || dismissed) return null;
 
   const handleAndroidInstall = async () => {
     if (!deferredPrompt) return;
@@ -34,59 +34,64 @@ export default function AddToHomeScreen() {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="rounded-2xl border border-accent/30 bg-surface p-5 space-y-4"
-    >
-      {/* Header */}
-      <div className="flex items-center gap-3">
-        <div
-          className="w-10 h-10 rounded-xl flex items-center justify-center"
-          style={{ background: "rgba(212,165,116,0.12)" }}
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" strokeWidth="1.3" className="text-accent" />
-            <path d="M12 17h.01" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="text-accent" />
-          </svg>
-        </div>
-        <div>
-          <p className="text-[14px] font-medium text-ink">Add to Home Screen</p>
-          <p className="text-[11px] text-inkSoft">Install Ehsaas on your phone</p>
-        </div>
-      </div>
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0, y: -12 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -12 }}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        className="rounded-2xl border border-accent/40 bg-surface overflow-hidden"
+      >
+        {/* Accent top bar */}
+        <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-accent to-transparent" />
 
-      {ios ? (
-        /* iOS step-by-step */
-        <div className="space-y-2">
-          {[
-            { step: "1", text: 'Open this page in Safari' },
-            { step: "2", text: 'Tap the Share icon ↑ at the bottom' },
-            { step: "3", text: '"Add to Home Screen" → Add' },
-          ].map(({ step, text }) => (
-            <div key={step} className="flex items-center gap-3">
-              <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center shrink-0">
-                <span className="text-[10px] text-accent font-600">{step}</span>
-              </div>
-              <p className="text-[13px] text-inkSoft">{text}</p>
+        <div className="p-4 space-y-3">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <p className="text-[14px] font-medium text-ink leading-snug">
+                Save Ehsaas to your phone
+              </p>
+              <p className="text-[11px] text-inkSoft mt-0.5">
+                {ios ? "Open in Safari to install" : "Add to Home Screen"}
+              </p>
             </div>
-          ))}
+            <button
+              onClick={() => setDismissed(true)}
+              className="text-inkSoft hover:text-ink text-[18px] leading-none mt-0.5 shrink-0"
+            >
+              ×
+            </button>
+          </div>
+
+          {ios ? (
+            <div className="space-y-2">
+              {[
+                { n: "1", t: "Open this link in Safari (not Chrome)" },
+                { n: "2", t: 'Tap Share icon  ↑  at the bottom bar' },
+                { n: "3", t: 'Tap "Add to Home Screen" then Add' },
+              ].map(({ n, t }) => (
+                <div key={n} className="flex items-center gap-2.5">
+                  <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center shrink-0">
+                    <span className="text-[10px] font-600 text-accent">{n}</span>
+                  </div>
+                  <p className="text-[12px] text-inkSoft leading-snug">{t}</p>
+                </div>
+              ))}
+            </div>
+          ) : deferredPrompt ? (
+            <button
+              onClick={handleAndroidInstall}
+              className="w-full py-2.5 rounded-full bg-accent text-bg text-[13px] font-500 active:scale-95 transition-transform"
+            >
+              Install on Home Screen
+            </button>
+          ) : (
+            <p className="text-[12px] text-inkSoft leading-[1.6]">
+              Open in Chrome → tap menu (⋮) → "Add to Home Screen"
+            </p>
+          )}
         </div>
-      ) : deferredPrompt ? (
-        /* Android: native install button */
-        <button
-          onClick={handleAndroidInstall}
-          className="w-full py-3 rounded-full bg-accent text-bg text-[13px] font-500 active:scale-95 transition-transform"
-        >
-          Download App
-        </button>
-      ) : (
-        /* Android: no prompt yet */
-        <p className="text-[12px] text-inkSoft leading-[1.6]">
-          Open in Chrome and tap "Add to Home Screen" from the browser menu (⋮).
-        </p>
-      )}
-    </motion.div>
+      </motion.div>
+    </AnimatePresence>
   );
 }
