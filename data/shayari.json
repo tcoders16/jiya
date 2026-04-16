@@ -1,0 +1,304 @@
+{
+  "shayari": [
+    {
+      "id": "sh-001",
+      "text": "तुम्हारी याद आती है तो रात भर जागता हूँ, तुम्हारा नाम लेता हूँ तो दिल थाम लेता हूँ।",
+      "translation": "When I remember you, I stay awake all night. When I say your name, my heart trembles.",
+      "meaning": "A reflection on how deep memories and feelings can keep one restless and emotionally affected."
+    },
+    {
+      "id": "sh-002",
+      "text": "तुम मेरे दिल में नहीं, दिल तुम्हारे साथ है।",
+      "translation": "You are not in my heart, my heart is with you.",
+      "meaning": "Expressing that love is not possession but a gentle belonging together."
+    },
+    {
+      "id": "sh-003",
+      "text": "खामोशी में भी तुम्हारी आवाज़ सुनता हूँ।",
+      "translation": "Even in silence, I hear your voice.",
+      "meaning": "The presence of someone beloved transcends words and sound."
+    },
+    {
+      "id": "sh-004",
+      "text": "तुम्हारी मुस्कुराहट मेरा सबसे बड़ा सुकून है।",
+      "translation": "Your smile is my greatest peace.",
+      "meaning": "A simple acknowledgment of how someone's joy brings comfort to another."
+    },
+    {
+      "id": "sh-005",
+      "text": "होंठों पर नहीं, दिल में तुम्हारा नाम बसा है।",
+      "translation": "Not on my lips, but your name lives in my heart.",
+      "meaning": "True feelings are often silent and deeper than words."
+    },
+    {
+      "id": "sh-006",
+      "text": "तुम्हारे बिना दिन अधूरे हैं, रातें लंबी हैं।",
+      "translation": "Without you, days feel incomplete and nights feel long.",
+      "meaning": "Absence makes time feel different and life feels incomplete."
+    },
+    {
+      "id": "sh-007",
+      "text": "तुम्हारी बातें, तुम्हारी हँसी, सब कुछ मेरा अपना है।",
+      "translation": "Your words, your laughter, everything is mine.",
+      "meaning": "Cherishing and treasuring the small moments and gestures from someone beloved."
+    },
+    {
+      "id": "sh-008",
+      "text": "जहाँ तुम हो, वहाँ ही मेरा घर है।",
+      "translation": "Where you are, that is my home.",
+      "meaning": "Home is not a place but a presence, a person, a feeling."
+    },
+    {
+      "id": "sh-009",
+      "text": "तुम्हारी यादों में खो जाता हूँ, तुम्हारे ख्वालों में जी लेता हूँ।",
+      "translation": "I lose myself in your memories, I live in your dreams.",
+      "meaning": "How thoughts of someone beloved can consume one's consciousness."
+    },
+    {
+      "id": "sh-010",
+      "text": "तुम्हारे साथ हर पल खास है, हर लम्हा अनमोल है।",
+      "translation": "Every moment with you is special, every instant is precious.",
+      "meaning": "Time spent with someone beloved becomes invaluable."
+    },
+    {
+      "id": "sh-011",
+      "text": "दिल की बातें कभी जुबान तक नहीं पहुँचती।",
+      "translation": "Words of the heart never reach the tongue.",
+      "meaning": "Some feelings are too deep for words to express."
+    },
+    {
+      "id": "sh-012",
+      "text": "तुम्हारी छाया में ही मुझे शांति मिलती है।",
+      "translation": "I find peace only in your shadow.",
+      "meaning": "The presence of someone beloved brings calm and solace."
+    },
+    {
+      "id": "sh-013",
+      "text": "तुम आओ तो दिन सुहावना हो जाता है।",
+      "translation": "When you come, the day becomes beautiful.",
+      "meaning": "A person's presence can transform an ordinary day into something special."
+    },
+    {
+      "id": "sh-014",
+      "text": "तुम्हारी याद में रातें कट जाती हैं, दिन ढूंढते हुए गुज़र जाते हैं।",
+      "translation": "Nights pass in your memory, days go searching for you.",
+      "meaning": "Time is consumed by thoughts of someone cherished."
+    },
+    {
+      "id": "sh-015",
+      "text": "तुम्हारी एक नज़र से ही सब कुछ भूल जाता हूँ।",
+      "translation": "One glance from you makes me forget everything.",
+      "meaning": "The power of someone's presence to distract from all else."
+    },
+    {
+      "id": "sh-016",
+      "text": "प्यार में पागल नहीं, बस तुम्हारे लिए होश खो देता हूँ।",
+      "translation": "Not mad with love, just lose my senses for you.",
+      "meaning": "Love is not madness but a willing loss of self in another."
+    },
+    {
+      "id": "sh-017",
+      "text": "तुम्हारे बिना सांसें भी अधूरी लगती हैं।",
+      "translation": "Without you, even breathing feels incomplete.",
+      "meaning": "Someone beloved becomes as essential as breath itself."
+    },
+    {
+      "id": "sh-018",
+      "text": "तुम्हारी हर बात एक सुरीली धुन है मेरे लिए।",
+      "translation": "Every word you say is a melody to me.",
+      "meaning": "Finding beauty and music in the presence of someone beloved."
+    },
+    {
+      "id": "sh-019",
+      "text": "तुम मेरी शायरी हो, मेरी हर नज़्म में तुम हो।",
+      "translation": "You are my poetry, you are in every verse I write.",
+      "meaning": "Someone beloved becomes the subject and inspiration of one's life."
+    },
+    {
+      "id": "sh-020",
+      "text": "तुम्हारे साथ जिंदगी एक गीत बन गई है।",
+      "translation": "Life became a song with you.",
+      "meaning": "Presence of someone beloved makes life feel like music."
+    },
+    {
+      "id": "sh-021",
+      "text": "तुम आंखों में नहीं, दिल की धड़कन में बसे हो।",
+      "translation": "You don't live in my eyes, you live in my heartbeat.",
+      "meaning": "Deep love becomes as fundamental as one's own heartbeat."
+    },
+    {
+      "id": "sh-022",
+      "text": "तुम्हारी खुशबू मेरे साथ है, तुम्हारी याद मेरे साथ है।",
+      "translation": "Your fragrance stays with me, your memory stays with me.",
+      "meaning": "Someone beloved leaves an invisible but constant impression."
+    },
+    {
+      "id": "sh-023",
+      "text": "जो दिल से कहा, वो होंठों से कहने की हिम्मत नहीं।",
+      "translation": "What the heart says, the lips lack courage to speak.",
+      "meaning": "True feelings often remain unspoken due to shyness or fear."
+    },
+    {
+      "id": "sh-024",
+      "text": "तुम्हारे पास बैठकर भी दूर होने का एहसास होता है।",
+      "translation": "Even sitting beside you, I feel far away.",
+      "meaning": "Sometimes proximity doesn't bridge emotional distance."
+    },
+    {
+      "id": "sh-025",
+      "text": "तुम मेरा सबसे बड़ा सफ़लता हो, सबसे बड़ी शांति हो।",
+      "translation": "You are my greatest success, my deepest peace.",
+      "meaning": "Loving someone becomes one's greatest achievement."
+    },
+    {
+      "id": "sh-026",
+      "text": "तुम्हारे लिए दिल में बस एक ही दुआ है।",
+      "translation": "For you, my heart holds just one prayer.",
+      "meaning": "Pure love is simplicity itself, asking for nothing but the beloved's well-being."
+    },
+    {
+      "id": "sh-027",
+      "text": "तुम्हारी बातों में ही मेरा संसार है।",
+      "translation": "Your words are my entire world.",
+      "meaning": "Someone beloved becomes the center of one's universe."
+    },
+    {
+      "id": "sh-028",
+      "text": "तुम नहीं हो तो घर भी घर नहीं लगता।",
+      "translation": "Without you, even home doesn't feel like home.",
+      "meaning": "Someone beloved is what truly makes a place home."
+    },
+    {
+      "id": "sh-029",
+      "text": "तुम्हारे ख्याल में ही ज़िंदगी कट गई।",
+      "translation": "Life passed in thoughts of you.",
+      "meaning": "Time spent thinking of someone beloved is never wasted."
+    },
+    {
+      "id": "sh-030",
+      "text": "तुम्हारी एक मुस्कुराहट हजार दिन की खुशियों के बराबर है।",
+      "translation": "One smile from you equals thousand days of happiness.",
+      "meaning": "The value of a moment with someone beloved is immeasurable."
+    },
+    {
+      "id": "sh-031",
+      "text": "तुम आंधी हो, तूफान हो, पर मेरी शांति भी हो।",
+      "translation": "You are a storm, a tempest, yet you are my peace.",
+      "meaning": "Paradox of love—someone can be both turbulent and calming."
+    },
+    {
+      "id": "sh-032",
+      "text": "तुम्हारे बिना मेरी कहानी अधूरी है।",
+      "translation": "Without you, my story is incomplete.",
+      "meaning": "Someone beloved is integral to one's life narrative."
+    },
+    {
+      "id": "sh-033",
+      "text": "तुम मेरी सांस हो, मेरी हर साँस में तुम हो।",
+      "translation": "You are my breath, in every breath I take.",
+      "meaning": "Love makes someone as essential as air itself."
+    },
+    {
+      "id": "sh-034",
+      "text": "तुम्हारे साथ हर पीड़ा भी मीठी लगती है।",
+      "translation": "With you, even pain feels sweet.",
+      "meaning": "The presence of beloved transforms suffering into something bearable."
+    },
+    {
+      "id": "sh-035",
+      "text": "तुम न हो तो क्या खूबसूरती है इस दुनिया में।",
+      "translation": "What beauty is there in this world without you.",
+      "meaning": "Beauty is only meaningful when shared with someone beloved."
+    },
+    {
+      "id": "sh-036",
+      "text": "तुम्हारा हर क्षण मेरे लिए एक खज़ाना है।",
+      "translation": "Every moment with you is a treasure for me.",
+      "meaning": "Time spent with someone beloved becomes priceless."
+    },
+    {
+      "id": "sh-037",
+      "text": "तुम मेरी दुनिया हो, मेरा आसमान हो।",
+      "translation": "You are my world, you are my sky.",
+      "meaning": "Someone beloved becomes one's entire universe."
+    },
+    {
+      "id": "sh-038",
+      "text": "तुम्हारे साथ सवेरा कभी नहीं होता, बस रात है।",
+      "translation": "With you, morning never comes, there's only night.",
+      "meaning": "Time disappears when with someone beloved."
+    },
+    {
+      "id": "sh-039",
+      "text": "तुम्हारी बातें मेरी सबसे बड़ी दवा हैं।",
+      "translation": "Your words are my greatest medicine.",
+      "meaning": "Someone beloved has the power to heal."
+    },
+    {
+      "id": "sh-040",
+      "text": "तुम प्रेम नहीं, प्रेम का अर्थ हो।",
+      "translation": "You are not love, you are the meaning of love.",
+      "meaning": "Someone beloved embodies the essence of love itself."
+    },
+    {
+      "id": "sh-041",
+      "text": "तुम्हारी यादें मेरी सबसे प्यारी चीज़ें हैं।",
+      "translation": "Your memories are my most precious possessions.",
+      "meaning": "Memories of someone beloved become treasures to hold onto."
+    },
+    {
+      "id": "sh-042",
+      "text": "तुम बिना मेरी जिंदगी एक सूनी किताब है।",
+      "translation": "Without you, my life is an empty book.",
+      "meaning": "Someone beloved writes meaning into one's life."
+    },
+    {
+      "id": "sh-043",
+      "text": "तुम्हारे लिए मेरे पास सब कुछ है, सब कुछ कम है।",
+      "translation": "For you, I have everything, yet everything is not enough.",
+      "meaning": "Love makes one feel eternally inadequate in expressing it."
+    },
+    {
+      "id": "sh-044",
+      "text": "तुम मेरी खुशबू हो, मेरी साँस हो, मेरी जान हो।",
+      "translation": "You are my fragrance, my breath, my life.",
+      "meaning": "Someone beloved becomes intertwined with one's existence."
+    },
+    {
+      "id": "sh-045",
+      "text": "तुम आओ तो पूरी दुनिया भूल जाता हूँ।",
+      "translation": "When you arrive, I forget the entire world.",
+      "meaning": "The presence of someone beloved makes everything else fade away."
+    },
+    {
+      "id": "sh-046",
+      "text": "तुम्हारे चेहरे पर हर इंसान की खूबसूरती नज़र आती है।",
+      "translation": "In your face, I see the beauty of all people.",
+      "meaning": "Love elevates one's perception of the beloved's beauty."
+    },
+    {
+      "id": "sh-047",
+      "text": "तुम मेरी सबसे लंबी, सबसे मीठी नींद हो।",
+      "translation": "You are my longest, sweetest sleep.",
+      "meaning": "Someone beloved brings peace and restfulness."
+    },
+    {
+      "id": "sh-048",
+      "text": "तुम्हारे साथ हर घड़ी एक उत्सव है।",
+      "translation": "Every moment with you is a celebration.",
+      "meaning": "Being with someone beloved turns ordinary time into something special."
+    },
+    {
+      "id": "sh-049",
+      "text": "तुम न सही शब्दों में बताया, पर दिल समझता है।",
+      "translation": "Perhaps I couldn't express it in words, but your heart understands.",
+      "meaning": "True love needs no words; the heart knows."
+    },
+    {
+      "id": "sh-050",
+      "text": "तुम मेरी हर कविता हो, हर धड़कन हो, हर साँस हो।",
+      "translation": "You are my every poem, my every heartbeat, my every breath.",
+      "meaning": "Complete surrender and integration of someone beloved into one's being."
+    }
+  ]
+}

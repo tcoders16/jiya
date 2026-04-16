@@ -8,6 +8,8 @@ import ForHerCard from "@/components/ForHerCard";
 import ReminderEnableCard from "@/components/ReminderEnableCard";
 import BottomActionRow from "@/components/BottomActionRow";
 import InstallPromptCard from "@/components/InstallPromptCard";
+import ShayariRotator, { type Shayari } from "@/components/ShayariRotator";
+import ShayariChatBox from "@/components/ShayariChatBox";
 import { getTodayPoem } from "@/lib/poem-store";
 import { getTodayPhoto } from "@/lib/getTodayPhoto";
 import { prettyDate, softGreeting } from "@/lib/date";
@@ -25,6 +27,7 @@ export default function Home() {
   const greeting = useMemo(() => softGreeting(), []);
   const [layer, setLayer] = useState<Layer | null>(null);
   const [loading, setLoading] = useState(true);
+  const [currentShayari, setCurrentShayari] = useState<Shayari | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -75,15 +78,19 @@ export default function Home() {
   }, [poem]);
 
   return (
-    <div className="flex flex-col gap-7">
-      <TodayHeader greeting={greeting} date={prettyDate(poem.date)} />
-      <JiyaPhotoBlock photo={photo} />
-      <OriginalPoemCard title={poem.title} poem={poem.originalPoem} />
-      <MeaningCard title={layer?.title} meaning={layer?.meaning} loading={loading} />
-      <ForHerCard line={layer?.forHer} loading={loading} />
-      <ReminderEnableCard />
-      <InstallPromptCard />
-      <BottomActionRow />
-    </div>
+    <>
+      <div className="flex flex-col gap-7">
+        <TodayHeader greeting={greeting} date={prettyDate(poem.date)} />
+        <JiyaPhotoBlock photo={photo} />
+        <OriginalPoemCard title={poem.title} poem={poem.originalPoem} />
+        <MeaningCard title={layer?.title} meaning={layer?.meaning} loading={loading} />
+        <ForHerCard line={layer?.forHer} loading={loading} />
+        <ShayariRotator onShayariChange={setCurrentShayari} />
+        <ReminderEnableCard />
+        <InstallPromptCard />
+        <BottomActionRow />
+      </div>
+      <ShayariChatBox shayari={currentShayari} />
+    </>
   );
 }
