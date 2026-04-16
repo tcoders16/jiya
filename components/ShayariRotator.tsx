@@ -83,36 +83,28 @@ export default function ShayariRotator({ onShayariChange }: Props) {
           className="rounded-2xl overflow-hidden border border-hair bg-surface"
         >
           {/* Photo */}
-          <div className="relative w-full aspect-[4/3] overflow-hidden">
+          <div className="relative w-full overflow-hidden bg-surface">
             <AnimatePresence mode="wait">
               <motion.div
                 key={photo}
-                initial={{ opacity: 0, scale: 1.04 }}
+                initial={{ opacity: 0, scale: 1.03 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.97 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute inset-0"
               >
                 <Image
                   src={photo}
                   alt="Jiya"
-                  fill
-                  className="object-cover"
+                  width={900}
+                  height={1200}
+                  className="w-full h-auto object-contain"
                   sizes="(max-width: 480px) 100vw, 480px"
                   priority={idx < 2}
                 />
               </motion.div>
             </AnimatePresence>
-            {/* Bottom gradient overlay */}
-            <div
-              className="absolute inset-x-0 bottom-0 h-24 pointer-events-none"
-              style={{
-                background:
-                  "linear-gradient(to top, rgba(20,17,14,0.85) 0%, transparent 100%)",
-              }}
-            />
             {/* Index pill */}
-            <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-black/40 backdrop-blur-sm">
+            <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-black/50 backdrop-blur-sm">
               <span className="text-[10px] text-ink/70 tabular-nums">
                 {((idx % total) + total) % total + 1} / {total}
               </span>

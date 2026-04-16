@@ -6,7 +6,7 @@ import type { JiyaPhoto } from "@/lib/getTodayPhoto";
 
 export default function JiyaPhotoBlock({
   photo,
-  label = "A Soft Glimpse",
+  label = "Om's Fav Picture",
 }: {
   photo: JiyaPhoto | null;
   label?: string;
@@ -23,7 +23,6 @@ export default function JiyaPhotoBlock({
       <div
         className="relative overflow-hidden rounded-[20px]"
         style={{
-          aspectRatio: "4 / 5",
           border: "1px solid var(--hair)",
           background: "var(--surface)",
         }}
@@ -34,10 +33,11 @@ export default function JiyaPhotoBlock({
           <Image
             src={photo.src}
             alt={photo.alt}
-            fill
+            width={900}
+            height={1200}
             priority
             sizes="(max-width: 420px) 100vw, 420px"
-            className="object-cover"
+            className="w-full h-auto object-contain"
             onError={() => setErrored(true)}
           />
         ) : (

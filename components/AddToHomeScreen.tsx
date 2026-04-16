@@ -43,10 +43,13 @@ export default function AddToHomeScreen() {
       {/* Header */}
       <div className="flex items-center gap-3">
         <div
-          className="w-10 h-10 rounded-xl flex items-center justify-center text-[18px]"
+          className="w-10 h-10 rounded-xl flex items-center justify-center"
           style={{ background: "rgba(212,165,116,0.12)" }}
         >
-          📲
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" strokeWidth="1.3" className="text-accent" />
+            <path d="M12 17h.01" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="text-accent" />
+          </svg>
         </div>
         <div>
           <p className="text-[14px] font-medium text-ink">Add to Home Screen</p>
